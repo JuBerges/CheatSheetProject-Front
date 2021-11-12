@@ -1,0 +1,10 @@
+<div class="darky flex h-24 border-b-4 border-gray-300 justify-between">
+    <p class="text-6xl text-gray-200 self-center ml-2">RunIt</p>
+    <p class="text-white">Lumiére = {{ getLightStatus() }}</p>
+    <ul class="text-white">
+      <li *ngFor="let billionaire of posts">
+        Je m'appelle {{billionaire.firstName}} - {{billionaire.lastName}}
+      </li>
+    </ul>
+    <app-the-button class="self-center mr-5"></app-the-button>
+</div>
