@@ -1,5 +1,5 @@
-import { HttpClientService } from './../services/http-client.service';
-import { CommuService } from './../services/commu.service';
+import { HttpClientService } from 'src/app/services/http-client.service';
+import { CommuService } from 'src/app/services/commu.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  posts : any;
+  posts: any;
   constructor(private commuService: CommuService, private HttpClientService: HttpClientService) { }
 
   ngOnInit(): void {
     this.HttpClientService.getAllBills().subscribe(
-    (res) => { this.posts = res;},
-    (error) => { console.log(error); });
+      (res) => { this.posts = res; },
+      (error) => { console.log(error); });
 
     //this.HttpClientService.getAllBills();
   }
