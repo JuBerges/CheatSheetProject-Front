@@ -1,4 +1,4 @@
-import { CommuService } from './../services/commu.service';
+import { CommuService } from 'src/app/services/commu.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,13 +12,13 @@ export class TheButtonComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  changeLabel() : void {
+  changeLabel(): void {
     this.commuService.changeLabel();
     this.commuService.changeLightStatus();
   }
 
 
-  getButtonLabel() : string {
+  getButtonLabel(): string {
     return this.commuService.getButtonLabel();
   }
 }
