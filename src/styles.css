@@ -5,9 +5,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background: rgb(36, 37, 38);
+    /*background: rgb(36, 37, 38);*/
+    background: rgb(192, 191, 191);
 }
 
-darky {
+.darky {
     background: rgb(36, 37, 38);
 }
