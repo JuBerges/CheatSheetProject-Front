@@ -8,6 +8,8 @@ import { TheFooterComponent } from './components/the-footer/the-footer.component
 import { TheButtonComponent } from './components/the-button/the-button.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { CardoComponent } from './components/cardo/cardo.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FooterComponent } from './components/footer/footer.component';
     NavBarComponent,
     TheButtonComponent,
     TheFooterComponent,
-    FooterComponent
+    FooterComponent,
+    CardoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,3 +30,4 @@ import { FooterComponent } from './components/footer/footer.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -1,14 +1,19 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
 
 /* You can add global styles to this file, and also import other style files */
 
 body {
     /*background: rgb(36, 37, 38);*/
-    background: rgb(192, 191, 191);
+    background: rgb(27, 27, 27);
 }
 
 .darky {
-    background: rgb(36, 37, 38);
+    background: rgb(27, 27, 27);
+}
+
+.esto {
+    font-family: 'Estonia', cursive;
 }
