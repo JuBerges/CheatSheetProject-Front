@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   posts: any;
+  showMenu: boolean = false;
+
   constructor(private commuService: CommuService, private HttpClientService: HttpClientService) { }
 
   ngOnInit(): void {
@@ -20,5 +22,8 @@ export class NavBarComponent implements OnInit {
   }
   getLightStatus(): string {
     return this.commuService.getLightStatus();
+  }
+  toggleNavbar(){
+    this.showMenu = !this.showMenu;
   }
 }

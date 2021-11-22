@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CommuService {
   lightStatus: string = 'Eteint';
-  buttonLabel: string = 'Start';
+  buttonLabel: string = 'Fermé';
 
   constructor() { }
 
@@ -13,7 +13,7 @@ export class CommuService {
     return this.buttonLabel;
   }
   changeLabel(): string {
-    this.buttonLabel === 'Start'? this.buttonLabel = 'Stop':this.buttonLabel = 'Start';
+    this.buttonLabel === 'Fermé'? this.buttonLabel = 'Ouvert':this.buttonLabel = 'Fermé';
     return this.buttonLabel;
   }
 
