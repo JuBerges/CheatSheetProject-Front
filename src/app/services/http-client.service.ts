@@ -12,7 +12,7 @@ private url = 'http://localhost:8081/billionaires'
 
   getAllBills() {
     const headers= new HttpHeaders()
-    .set('Access-Control-Allow-Origin', '*')
+    .set('Access-Control-Allow-Origin', 'http//localhost:4200')
     .set('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS')
     .set('Access-Control-Allow-Headers', 'Origin, Content-Type, X-Auth-Token');
 

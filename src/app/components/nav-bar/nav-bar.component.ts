@@ -18,6 +18,7 @@ export class NavBarComponent implements OnInit {
       (res) => { this.posts = res; },
       (error) => { console.log(error); });
 
+
     //this.HttpClientService.getAllBills();
   }
   getLightStatus(): string {
