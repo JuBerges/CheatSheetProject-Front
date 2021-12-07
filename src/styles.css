@@ -17,3 +17,7 @@ body {
 .esto {
     font-family: 'Estonia', cursive;
 }
+
+.active-link {
+    color: darkgoldenrod;
+}
