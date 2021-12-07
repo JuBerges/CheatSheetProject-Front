@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardoComponent } from './components/cardo/cardo.component';
 import { HomeComponent } from './components/home/home.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     FooterComponent,
     CardoComponent,
     HomeComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
