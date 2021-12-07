@@ -9,14 +9,15 @@ import { DiscComponent } from './components/disc/disc.component';
 import { EventComponent } from './components/event/event.component';
 import { CommitmentsComponent } from './components/commitments/commitments.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NoResultComponent } from './components/no-result/no-result.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path: '',redirectTo: 'home', pathMatch: 'full'}, {path: 'home', component: HomeComponent},
-  {path: 'team', component: TeamComponent},
-  {path: 'tea', component: TeaComponent},
+  {path: 'équipe', component: TeamComponent},
+  {path: 'salon-de-thé', component: TeaComponent},
   {path: 'tats', component: TatsComponent},
   {path: 'guests', component: GuestsComponent},
   {path: 'piercings', component: PiercingsComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'event', component: EventComponent},
   {path: 'commitments', component: CommitmentsComponent},
   {path: 'contact', component: ContactComponent},
+  {path: '**', component: NoResultComponent},
 ];
 
 @NgModule({
