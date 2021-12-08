@@ -21,3 +21,7 @@ body {
 .active-link {
     color: gold;
 }
+
+.white-svg {
+    fill: white;
+}
