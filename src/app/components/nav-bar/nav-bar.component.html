@@ -1,10 +1,10 @@
-<div class="darky flex h-16 justify-end lg:justify-center">
+<div class="darky flex h-16 justify-end 2xl:justify-center">
     <!--<ul class="text-white">
       <li *ngFor="let billionaire of posts">
         Je m'appelle {{billionaire.title}} - {{billionaire.description}}
       </li>
     </ul>-->
-    <ul class="hidden lg:flex text-white justify-around">
+    <ul class="hidden 2xl:flex text-white justify-around">
         <li class="m-2 font-bold esto text-4xl mx-4 hover:translate-y-2"><button routerLink="/home" routerLinkActive="active-link">Accueil</button></li>
         <li class="m-2 font-bold esto text-4xl mx-4 hover:translate-y-2"><button routerLink="/équipe" routerLinkActive="active-link">L'équipe</button></li>
         <li class="m-2 font-bold esto text-4xl mx-4 hover:translate-y-2"><button routerLink="/tats" routerLinkActive="active-link">Tatouages</button></li>
@@ -17,15 +17,16 @@
         <li class="m-2 font-bold esto text-4xl mx-4 hover:translate-y-2"><button routerLink="/commitments" routerLinkActive="active-link">Nos engagements</button></li>
         <li class="m-2 font-bold esto text-4xl mx-4 hover:translate-y-2"><button routerLink="/contact" routerLinkActive="active-link">Nous contacter</button></li>
     </ul>
-    <!--<img class="mr-2 animate-pulse h-14 w-14 self-end lg:hidden" src="../../../assets/logos/logo.jpg" alt="logo du site" (click)="toggleNavbar()" />-->
-    <button class="flex items-center px-3 py-2 border rounded lg:hidden" (click)="toggleNavbar()" type="button">
-      <svg class="h-3 w-3 white-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+    <button class="flex items-center px-3 py-2 rounded 2xl:hidden" (click)="toggleNavbar()" type="button">
+      <svg *ngIf="!showMenu" xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 white-svg" viewBox="0 0 24 24">
+        <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+      </svg>
+      <svg *ngIf="showMenu" xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 white-svg transform scale-x-50" viewBox="0 0 24 24">
+        <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
       </svg>
     </button>
 </div>
-<div class="w-full h-24 bg-black justify-between flex border-b-4 border-gray-300 absolute z-50" *ngIf="showMenu">
+<div class="w-full h-24 bg-black justify-between flex border-b-4 border-gray-300 absolute z-50 2xl:hidden" *ngIf="showMenu">
     <p class="m-2 text-white text-2xl font-bold hover:cursor-pointer">TEST1</p>
     <p class="m-2 text-white text-2xl font-bold hover:cursor-pointer">TEST1</p>
     <p class="m-2 text-white text-2xl font-bold hover:cursor-pointer">TEST1</p>
